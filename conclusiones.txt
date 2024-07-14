@@ -1,0 +1,21 @@
+Conclusiones del Proyecto:
+
+Para este test, se eligieron dos productos de diferentes categorías: un celular y una laptop.
+
+Se priorizó la utilización de ID y class al localizar los elementos web para garantizar una mayor precisión en las pruebas.
+
+Se presentó un desafío con el manejo de la alerta pop-up, pero se solucionó utilizando un bloque try-catch para asegurar la continuidad de la automatización.
+
+Para las validaciones de los elementos en el carrito, se pasó la información desde el feature, lo que permitió una verificación más dinámica.
+
+En la validación del mensaje de confirmación, se tomó en cuenta únicamente la presencia del botón OK como indicador de éxito.
+
+El escenario de esta prueba se ejecutó adecuadamente, cumpliendo con todos los pasos definidos.
+
+Sugerencias:
+
+1. Validación de Formulario: Se recomienda restringir los campos de entrada en el formulario de compra para que acepten únicamente strings y números, evitando caracteres no deseados en campos como nombre, tarjeta o año.
+
+2. Longitud de Caracteres: Implementar un mínimo de caracteres para los campos de entrada, evitando que se acepte solo un carácter.
+
+3. Placeholder Informativo: Incluir un placeholder en los campos del formulario que sirva como ejemplo de cómo debe ser llenado por el usuario.
