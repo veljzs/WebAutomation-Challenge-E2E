@@ -31,7 +31,7 @@ public class DemoblazePurchaseStepdefs {
     @Before
     public void setTheStage() {
         OnStage.setTheStage(new OnlineCast());
-    }//Escena
+    }
 
     @Before(order = 1)
     public void setScenario (Scenario scenario){
@@ -48,7 +48,6 @@ public class DemoblazePurchaseStepdefs {
 
     @When("el Cliente agrega {string} al carrito")
     public void elClienteAgregaAlCarrito(String arg0) {
-        //HandleAlert handleAlert = HandleAlert.acceptAlert();
         OnStage.theActorInTheSpotlight().attemptsTo(
                 ChooseProduct.withName(arg0),
                 AddToCart.now(),
@@ -89,7 +88,6 @@ public class DemoblazePurchaseStepdefs {
         for(Map<String, String> name : data){
             OnStage.theActorInTheSpotlight().attemptsTo(
                     PlaceOrderForm.withCredentials(name.get("name"), name.get("country"), name.get("city"), name.get("card"), name.get("month"), name.get("year"))
-
             );
         }
         screenShot();

@@ -1,7 +1,6 @@
 package com.challenge.tasks;
 
 import com.challenge.userinterfaces.HomePage;
-import com.challenge.userinterfaces.ProductPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
