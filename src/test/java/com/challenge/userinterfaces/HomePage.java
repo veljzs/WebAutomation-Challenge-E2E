@@ -9,4 +9,5 @@ public class HomePage {
                 .located(By.linkText(productName));
     }
     public static final Target CART_BUTTON = Target.the("Boton Cart").located(By.id("cartur"));
+    public static final Target NEXT_BUTTON = Target.the("Boton Cart").located(By.id("next2"));
 }

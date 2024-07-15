@@ -1,21 +1,24 @@
 Conclusiones del Proyecto:
+Para este test, se eligieron dos productos de diferentes categorías: un celular y una laptop. Esta selección permitió evaluar el proceso de compra en un contexto variado.
 
-Para este test, se eligieron dos productos de diferentes categorías: un celular y una laptop.
+Se priorizó la utilización de ID y class al localizar los elementos web, lo que garantizó una mayor precisión y robustez en las pruebas automatizadas.
 
-Se priorizó la utilización de ID y class al localizar los elementos web para garantizar una mayor precisión en las pruebas.
+Se presentó un desafío con el manejo de la alerta pop-up, el cual se resolvió utilizando un bloque try-catch. Esta solución permitió asegurar la continuidad del proceso de automatización, minimizando interrupciones inesperadas.
 
-Se presentó un desafío con el manejo de la alerta pop-up, pero se solucionó utilizando un bloque try-catch para asegurar la continuidad de la automatización.
+Para las validaciones de los elementos en el carrito, se pasó la información desde el feature, lo que permitió realizar verificaciones más dinámicas y adaptadas a los escenarios de prueba.
 
-Para las validaciones de los elementos en el carrito, se pasó la información desde el feature, lo que permitió una verificación más dinámica.
+En el llenado de los datos en el formulario de compra, se utilizó una tabla para facilitar la entrada de datos y asegurar que se completaran todos los campos necesarios de manera organizada.
 
-En la validación del mensaje de confirmación, se tomó en cuenta únicamente la presencia del botón OK como indicador de éxito.
+En la validación del mensaje de confirmación, se tomó en cuenta únicamente la presencia del botón OK como indicador de éxito, lo que simplificó la lógica de verificación.
 
-El escenario de esta prueba se ejecutó adecuadamente, cumpliendo con todos los pasos definidos.
+El escenario de esta prueba se ejecutó adecuadamente, cumpliendo con todos los pasos definidos en el flujo de trabajo.
 
 Sugerencias:
+Validación de Formulario: Se recomienda restringir los campos de entrada en el formulario de compra para que acepten únicamente strings y números, evitando así caracteres no deseados en campos como nombre, tarjeta o año.
 
-1. Validación de Formulario: Se recomienda restringir los campos de entrada en el formulario de compra para que acepten únicamente strings y números, evitando caracteres no deseados en campos como nombre, tarjeta o año.
+Longitud de Caracteres: Es importante implementar un mínimo de caracteres para los campos de entrada, de modo que no se acepte una entrada de solo un carácter, lo cual puede afectar la validez de los datos.
 
-2. Longitud de Caracteres: Implementar un mínimo de caracteres para los campos de entrada, evitando que se acepte solo un carácter.
+Placeholder Informativo: Se sugiere incluir un placeholder en los campos del formulario que sirva como ejemplo de cómo deben ser llenados por los usuarios, facilitando así la correcta introducción de datos.
 
-3. Placeholder Informativo: Incluir un placeholder en los campos del formulario que sirva como ejemplo de cómo debe ser llenado por el usuario.
+Mejora de la Experiencia del Usuario: Considerar agregar mensajes de error claros y específicos en caso de que la validación falle, para que el usuario sepa cómo corregir su entrada.
+

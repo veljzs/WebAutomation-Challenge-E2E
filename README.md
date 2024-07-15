@@ -1,17 +1,29 @@
-1. Prerequisitos:
-	- Maquina local con el sistema operativo Windows 11
-	- IDE IntelliJ version 2024.1.3
-	- Maven version  3.9.8 (debe estar en la variable de entorno)
-	- JDK versión 11 (debe estar en la variable de entorno)
+# Proyecto de Automatización Web E2E
 
-2. Comandos de instalación
-	- mvn install -DskipTests (descarga todas las dependencias del POM)
-	- npm install (descarga todas los package de mi package.json)	
+## Prerrequisitos
+- **IDE:** IntelliJ versión 2024.1.3
+- **Maven:** versión 3.9.1 (debe estar configurado en la variable de entorno)
+- **JDK:** versión 11 (debe estar configurado en la variable de entorno)
 
-3. Instrucciones para ejecutar los test   
-	  - Ir a la carpeta runner dentro de src/test/java/com.challenge
-	  - Seleccionar CucumberTestSuite
-	  - Correr el test en la linea de CucumberTestSuite
+## Comandos de Instalación
+- Ejecutar: `mvn install -DskipTests` (esto descarga todas las dependencias del POM)
 
- 	  - Generar Reporte: Ir a terminal y ejecutar el comando:  mvn serenity:aggregate. Dar link en el link Full Report para abrirlo o ir a target/site dar click derecho en index.html y elegir el browser donde abrirlo.
+## Instrucciones para Ejecutar las Pruebas
+1. **Verificar el JDK:**
+   - Asegúrate de que IntelliJ esté usando JDK 11.
+   - Ve a `File` > `Project Structure`, selecciona `Project` en `Project Settings` y confirma que el `SDK` sea `java version 11`.
 
+2. **Preparar el Entorno:**
+   - Si deseas generar un reporte, asegúrate de que la carpeta `target` no exista en el directorio del proyecto. Si existe, ejecuta `mvn clean` en la terminal.
+
+3. **Ejecutar la Suite de Pruebas:**
+   - Navega a `src/test/java/com.challenge/runners/CucumberTestSuite.java`.
+   - Ejecuta las pruebas desde la línea de **CucumberTestSuite**.
+
+### Generar Reporte
+
+Después de ejecutar las pruebas:
+
+1. Abre la Terminal y ejecuta: `mvn serenity:aggregate`.
+2. Selecciona el enlace **Full Report** que aparece al final de la ejecución del comando.
+3. También puedes ir a `target/site/serenity/index.html`, hacer clic derecho en el archivo y seleccionar "Abrir en" para elegir el navegador en el que deseas ver el reporte.
